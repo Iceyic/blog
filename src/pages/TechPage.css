@@ -1,0 +1,129 @@
+.tech-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.tech-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1rem 2rem;
+  background: rgba(10, 10, 15, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.nav-back:hover {
+  color: #fff;
+}
+
+.tech-header {
+  position: relative;
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tech-header-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, var(--tech-color), transparent);
+  opacity: 0.15;
+}
+
+.tech-header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.tech-header-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.tech-header h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.tech-header p {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tech-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.feature-grid-section {
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 217, 255, 0.3);
+}
+
+.feature-item h4 {
+  color: #00d9ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature-item p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tech-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,28 @@
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c0c0c0;
+}
+
+.comparison-table th {
+  color: #00d9ff;
+  font-weight: bold;
+  background: rgba(0, 217, 255, 0.1);
+}
+
+.comparison-table td:first-child {
+  color: #fff;
+  font-weight: bold;
+}
+
+.comparison-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}

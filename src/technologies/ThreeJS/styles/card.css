@@ -1,0 +1,163 @@
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  color: #049ef4;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.card h3 {
+  color: #00ff88;
+  margin: 1.5rem 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.card p, .card li {
+  color: #c0c0c0;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+}
+
+.card code {
+  background: rgba(4, 158, 244, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+  color: #049ef4;
+}
+
+.code-block {
+  background: #0d1117;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid #30363d;
+}
+
+.code-block pre {
+  margin: 0;
+  color: #c9d1d9;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.highlight-box {
+  background: rgba(4, 158, 244, 0.1);
+  border: 1px solid rgba(4, 158, 244, 0.3);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.highlight-box code {
+  background: rgba(4, 158, 244, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: #049ef4;
+  font-weight: bold;
+}
+
+.concept-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.concept-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.threejs-usage .usage-step {
+  margin-bottom: 1.5rem;
+}
+
+.threejs-usage .usage-step:last-child {
+  margin-bottom: 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(4, 158, 244, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item h4 {
+  color: #049ef4;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.feature-item p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c0c0c0;
+}
+
+.comparison-table th {
+  color: #049ef4;
+  font-weight: bold;
+  background: rgba(4, 158, 244, 0.1);
+}
+
+.comparison-table td:first-child {
+  color: #fff;
+  font-weight: bold;
+}
+
+.comparison-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
