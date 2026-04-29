@@ -1,0 +1,153 @@
+.architecture {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
+}
+
+.architecture-title {
+  color: #00d9ff;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.architecture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.architecture-layer {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.layer-label {
+  background: rgba(0, 217, 255, 0.2);
+  color: #00d9ff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.layer-content {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.arch-box {
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  min-width: 100px;
+}
+
+.arch-box.html {
+  background: linear-gradient(135deg, #e34f26, #ef652a);
+  color: white;
+}
+
+.arch-box.webgl {
+  background: linear-gradient(135deg, #990000, #cc0000);
+  color: white;
+}
+
+.arch-box.webxr-layer {
+  background: linear-gradient(135deg, #00d9ff, #00ff88);
+  color: #1a1a2e;
+}
+
+.arch-box.gpu {
+  background: linear-gradient(135deg, #333, #666);
+  color: white;
+  display: flex;
+  gap: 1rem;
+}
+
+.architecture-connector {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.connector-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, #00d9ff, #ff4757);
+}
+
+.connector-arrow {
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.hardware-layer .layer-label {
+  background: rgba(255, 71, 87, 0.2);
+  color: #ff4757;
+}
+
+.architecture-libraries {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.lib-item {
+  background: rgba(0, 255, 136, 0.1);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  color: #00ff88;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.architecture-applications {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 1rem;
+}
+
+.app-item {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: #ffd700;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .architecture-applications {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arch-box.gpu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

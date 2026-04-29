@@ -1,0 +1,93 @@
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  color: #00d9ff;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.card h3 {
+  color: #00ff88;
+  margin: 1.5rem 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.card p, .card li {
+  color: #c0c0c0;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 1.5rem;
+}
+
+.card code {
+  background: rgba(0, 217, 255, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+  color: #00d9ff;
+}
+
+.code-block {
+  background: #0d1117;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid #30363d;
+}
+
+.code-block pre {
+  margin: 0;
+  color: #c9d1d9;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.session-type {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.session-type-item {
+  flex: 1;
+  min-width: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #00d9ff;
+}
+
+.session-type-item strong {
+  color: #00d9ff;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.session-type-item span {
+  color: #a0a0a0;
+  font-size: 0.85rem;
+}
+
+.usage-flow .usage-step {
+  margin-bottom: 1.5rem;
+}
+
+.usage-flow .usage-step:last-child {
+  margin-bottom: 0;
+}

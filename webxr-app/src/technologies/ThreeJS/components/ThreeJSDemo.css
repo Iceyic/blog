@@ -1,0 +1,58 @@
+.threejs-canvas-container {
+  width: 100%;
+  height: 400px;
+  background: #0d1117;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.threejs-canvas-container canvas {
+  display: block;
+}
+
+.demo-section {
+  margin-top: 2rem;
+}
+
+.demo-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.demo-header {
+  padding: 1.5rem 2rem;
+  background: rgba(4, 158, 244, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.demo-header h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.demo-header p {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+}
+
+.demo-content {
+  padding: 2rem;
+}
+
+.canvas-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  color: #049ef4;
+  font-size: 0.9rem;
+  z-index: 10;
+}
