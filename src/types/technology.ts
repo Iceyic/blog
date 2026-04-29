@@ -28,6 +28,13 @@ export const technologies: Technology[] = [
     color: '#00d9ff',
     icon: '🥽',
   },
+  {
+    id: 'wasm',
+    name: 'WebAssembly',
+    description: '高性能的字节码格式，让浏览器可以实现接近原生的计算性能',
+    color: '#654ff0',
+    icon: '⚙️',
+  },
 ];
 
 export const getTechnology = (id: string): Technology | undefined => {

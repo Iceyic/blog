@@ -9,18 +9,18 @@ export const Home: React.FC = () => {
         <div className="hero-bg"></div>
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="gradient-text">Web Graphics</span>
+            <span className="gradient-text">Tech</span>
             <br />
-            Knowledge Hub
+            Gallery
           </h1>
           <p className="hero-subtitle">
-            探索浏览器图形与沉浸式技术知识库
+            探索前沿 Web 技术知识库
           </p>
           <div className="hero-tags">
             <span className="tag">WebGL</span>
             <span className="tag">Three.js</span>
             <span className="tag">WebXR</span>
-            <span className="tag">VR/AR</span>
+            <span className="tag">WebAssembly</span>
           </div>
         </div>
       </header>
